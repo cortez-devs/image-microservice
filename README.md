@@ -47,4 +47,33 @@ The service runs on: http://localhost:3000
   "filename": "1717430000000.jpg"
 }
 
+GET http://localhost:3000/image/1717430000000
+
+DELETE http://localhost:3000/image/1717430000000
+
+{ "message": "Image deleted" }
+
+image-microservice/
+│
+├── server.mjs          # Main server
+├── package.json
+├── .gitignore
+│
+├── images/             # Stored images (ignored by Git)
+└── data/
+    └── images.json     # Metadata store
+
+const formData = new FormData();
+formData.append("image", file);
+
+const res = await fetch("http://localhost:3000/upload", {
+  method: "POST",
+  body: formData
+});
+
+const data = await res.json();
+const imageUrl = `http://localhost:3000/image/${data.id}`;
+
+images/
+node_modules/
 

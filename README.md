@@ -41,7 +41,7 @@ The service runs on: http://localhost:3000
 
 **Response:**
 ```json
-{
+`{
   "message": "Image uploaded",
   "id": "1717430000000",
   "filename": "1717430000000.jpg"
@@ -50,8 +50,9 @@ The service runs on: http://localhost:3000
 GET http://localhost:3000/image/1717430000000
 
 DELETE http://localhost:3000/image/1717430000000
-
 { "message": "Image deleted" }
+```
+Directory Structure
 
 image-microservice/
 │
@@ -63,17 +64,4 @@ image-microservice/
 └── data/
     └── images.json     # Metadata store
 
-const formData = new FormData();
-formData.append("image", file);
-
-const res = await fetch("http://localhost:3000/upload", {
-  method: "POST",
-  body: formData
-});
-
-const data = await res.json();
-const imageUrl = `http://localhost:3000/image/${data.id}`;
-
-images/
-node_modules/
 

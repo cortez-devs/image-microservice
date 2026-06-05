@@ -20,7 +20,11 @@ This service accepts image uploads, stores them locally, and returns a unique ID
 
 ## 📦 Installation
 
-### Clone the repository: ###
+Clone the repository: 
+```bash
+git clone https://github.com/cortez-devs/user-profile-microservice.git
+cd user-profile-microservice
+```
 
 Install dependencies npm install
 

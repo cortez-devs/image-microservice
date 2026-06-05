@@ -26,12 +26,20 @@ git clone https://github.com/cortez-devs/user-profile-microservice.git
 cd user-profile-microservice
 ```
 
-Install dependencies npm install
+Install dependencies npm install:
+```bash
+npm install
+```
 
-Start the server: node server.mjs
+Start the server: 
+```bash
+node server.mjs
+```
 
-The service runs on: http://localhost:3000
-
+The service runs on:
+```bash
+http://localhost:3000
+```
 
 ---
 

@@ -20,7 +20,7 @@ This service accepts image uploads, stores them locally, and returns a unique ID
 
 ## 📦 Installation
 
-# Clone the repository: #
+### Clone the repository: ###
 
 Install dependencies npm install
 

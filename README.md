@@ -65,7 +65,7 @@ DELETE http://localhost:3000/image/1717430000000
 { "message": "Image deleted" }
 ```
 Directory Structure
-
+```code
 image-microservice/
 │
 ├── server.mjs          # Main server
@@ -75,5 +75,5 @@ image-microservice/
 ├── images/             # Stored images (ignored by Git)
 └── data/
     └── images.json     # Metadata store
-
+```
 

@@ -13,4 +13,7 @@ Content-Type: image/jpeg
 
 @imageID = "number given to the image when uploaded goes here"
 ### Upload image
-Get http://localhost:3000/images/imageID HTTP/1.1
+GET http://localhost:3000/images/imageID HTTP/1.1
+
+### Get
+GET http://localhost:3000/images/1780777931465
